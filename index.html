@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Candidate Task</title>
+        <script src="main.js" defer></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="inter--bold header__heading">Snippet Heading</h1>
+            <p class="header__caption inter--regular">Lorem <i>ipsum</i> dolor sit amet, <strong>consectetur</strong> adipiscing elit,&nbsp;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <a href="#" class="header__link" aria-label="Learn more about minim">minim</a>  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </header>
+        <nav class="nav">
+            <h2 class="inter--bold nav__heading">Links</h2>
+            <div class="inter--semibold nav__buttons-group">
+                <a href="#" class="nav__link nav__link--primary link" aria-label="Navigate to Link One">Link One
+                    <svg class="link__icon" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <g clip-path="url(#clip0_1_107)">ą
+                        <path d="M9.90312 0.5625C9.7375 0.21875 9.3875 0 9.00313 0C8.61875 0 8.27187 0.21875 8.10312 0.5625L6.09375 4.69688L1.60625 5.35938C1.23125 5.41563 0.91875 5.67812 0.803125 6.0375C0.6875 6.39687 0.78125 6.79375 1.05 7.05937L4.30625 10.2812L3.5375 14.8344C3.475 15.2094 3.63125 15.5906 3.94062 15.8125C4.25 16.0344 4.65937 16.0625 4.99687 15.8844L9.00625 13.7437L13.0156 15.8844C13.3531 16.0625 13.7625 16.0375 14.0719 15.8125C14.3812 15.5875 14.5375 15.2094 14.475 14.8344L13.7031 10.2812L16.9594 7.05937C17.2281 6.79375 17.325 6.39687 17.2062 6.0375C17.0875 5.67812 16.7781 5.41563 16.4031 5.35938L11.9125 4.69688L9.90312 0.5625Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_107">
+                        <rect width="18" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#" class="nav__link nav__link--secondary" aria-label="Navigate to Link Two">Link Two</a>
+            </div>
+        </nav>
+        <main id="gallery" class="gallery" arial-label="Gallery section">
+            <div class="gallery__left-wrapper">
+                <img class="gallery__image" src="assets/winston.jpg" alt="Picture of Winston AI hiring companion" >
+               <img class="gallery__image" src="assets/people.jpg" alt="Group of people sitting at a table at a business meeting" >
+                <img class="gallery__image gallery__image--wide" src="assets/city.jpg" alt="City skyline at sunset" >
+            </div>
+            <div  class="gallery__right-wrapper">
+                <div class="gallery__video-button" aria-label="Section with the video">
+                    <img class="gallery__image" src="assets/poster.jpg" alt="Poster for the video" >
+                    <button id="videoButton" class="gallery__button" aria-label="Open video modal">
+                        <svg class="gallery__play" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.42188 0.828143C2.72813 0.40158 1.85625 0.387518 1.14844 0.785955C0.440625 1.18439 0 1.93439 0 2.75002V19.25C0 20.0656 0.440625 20.8156 1.14844 21.2141C1.85625 21.6125 2.72813 21.5938 3.42188 21.1719L16.9219 12.9219C17.5922 12.5141 18 11.7875 18 11C18 10.2125 17.5922 9.49064 16.9219 9.07814L3.42188 0.828143Z" fill="currentColor"/>
+                        </svg></button>
+       
+                        
+                </div>
+                <img class="gallery__image" src="assets/woman.jpg" alt="Portrait of woman sitting at the table at work" >
+            </div>
+
+
+        </main>
+
+   
+
+        <footer class="footer">
+            <p class="inter--regular footer_caption"><strong>Media copyright</strong> - Lorem ipsum dolor sit amet.</p>
+        </footer>
+
+        <div id="videoModal" class="modal" hidden="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+    
+            <div class="modal__content">
+                <div class="modal__heading">
+                    <h1 id="modalTitle" class="inter--bold modal__title"> Modal Heading</h1>
+                    <button id="closeModal" class="modal__button" aria-label="Close modal">
+                        <svg class="modal__close-button" width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M16.0595 7.05937C16.6454 6.47344 16.6454 5.52187 16.0595 4.93594C15.4735 4.35 14.522 4.35 13.936 4.93594L9.0001 9.87656L4.05947 4.94062C3.47354 4.35469 2.52197 4.35469 1.93604 4.94062C1.3501 5.52656 1.3501 6.47812 1.93604 7.06406L6.87666 12L1.94072 16.9406C1.35479 17.5266 1.35479 18.4781 1.94072 19.0641C2.52666 19.65 3.47822 19.65 4.06416 19.0641L9.0001 14.1234L13.9407 19.0594C14.5267 19.6453 15.4782 19.6453 16.0642 19.0594C16.6501 18.4734 16.6501 17.5219 16.0642 16.9359L11.1235 12L16.0595 7.05937Z" fill="white"/>
+                        </svg>
+                        </button>
+                </div>
+ 
+                <p id="modalDescription" class="modal__caption inter--regular">Lorem <i>ipsum</i> dolor sit amet, <strong>consectetur</strong> adipiscing elit,&nbsp;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <a href="#" class="modal__link" aria-label="Learn more about minim">minim</a>  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <iframe id="video" class="modal__video" width="1440" height="609" src="" title="Introduction to SmartRecruiters" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+            </div>
+        </div>
+
+    </body>
+</html>
