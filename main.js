@@ -1,23 +1,18 @@
-var closeButton = document.getElementById('closeModal');
-var videoButton = document.getElementById('videoButton');
+//    const closeButton = document.getElementById('closeModal') as HTMLElement;
 var videoModal = document.getElementById('videoModal');
 var video = document.getElementById('video');
-var videoSrc = 'https://www.youtube.com/embed/x6iyz1AQhuU?autoplay=1';
 function closeModal() {
+    var _a;
+    (_a = video === null || video === void 0 ? void 0 : video.contentWindow) === null || _a === void 0 ? void 0 : _a.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
     videoModal.hidden = true;
-    video.src = '';
     document.body.style.overflowY = 'auto';
-    videoButton.focus();
 }
-closeButton.addEventListener('click', function () {
-    closeModal();
-});
-videoButton.addEventListener('click', function () {
+function openModal() {
+    var _a;
     videoModal.hidden = false;
     document.body.style.overflowY = 'hidden';
-    video.src = videoSrc;
-    closeButton.focus();
-});
+    (_a = video === null || video === void 0 ? void 0 : video.contentWindow) === null || _a === void 0 ? void 0 : _a.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+}
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         closeModal();
