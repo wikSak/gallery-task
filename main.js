@@ -1,4 +1,3 @@
-//    const closeButton = document.getElementById('closeModal') as HTMLElement;
 var videoModal = document.getElementById('videoModal');
 var video = document.getElementById('video');
 function closeModal() {
