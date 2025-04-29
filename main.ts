@@ -18,4 +18,3 @@ document.addEventListener('keydown', (event)=> {
         closeModal();
     }
 });
-
